@@ -17,7 +17,7 @@ const Navbar = () => {
                 <li className ="p-4">Contact</li>
                 <li><button className="px-4 text-[#fbf5f3] font-md rounded-md bg-[#7209b7]">My Resume</button></li>
             </ul>
-            <div onClick={handleNav} className="block md:hidden">
+            <div onClick={handleNav} className="md:hidden">
                 {!nav ? <AiOutlineClose size={20}/> : <AiOutlineMenu size={20} />}
             </div>
             <div className={!nav ? "fixed left-0 top-0 w-[60%] h-full border-r border-r-[#7209b7] bg-[#02020a] ease-in-out duration-500" : "fixed left-[-100%]"}>
@@ -32,6 +32,7 @@ const Navbar = () => {
                 </ul>
             </div>
         </div>
+        
     );
 };
 

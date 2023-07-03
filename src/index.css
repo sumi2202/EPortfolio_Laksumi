@@ -3,5 +3,19 @@
 @tailwind utilities;
 
 body {
-  background-color: black;
+  background:linear-gradient(-45deg, #f5f5f5ff, #27476b, rgb(8, 50, 53));
+  background-size: 400% 400%;
+  animation: gradient 30s ease infinite;
+  font-family: 'Manrope', sans-serif !important;
+}
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
 }

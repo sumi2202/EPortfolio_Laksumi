@@ -2,15 +2,21 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+  font-family: "Manrope", sans-serif !important;
+}
 .bg {
-  background: url(https://i.ibb.co/87GbbFP/2799006.jpg) no-repeat;
-  background-size: cover;
+  background: linear-gradient(-197deg, #02020a, #3a0ca3,  #7209b7);
+	background-size: cover;
+	animation: gradient 45s ease infinite;
+  font-family: "Manrope", sans-serif !important;
   height: 100%;
   width: 100%;
   position: fixed;
   top: 0;
   left: 0;
   z-index: -3;
+
 }
 .bg:before {
   content: "";
@@ -53,6 +59,17 @@
       opacity: 0.5;
   }
 }
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
 .star-field {
   position: fixed;
   top: 0;
@@ -83,11 +100,11 @@
   border-radius: 2px;
 }
 .star-field .layer:nth-child(1) {
-  animation: sf-fly-by-1 5s linear infinite;
+  animation: sf-fly-by-1 15s linear infinite;
 }
 .star-field .layer:nth-child(2) {
-  animation: sf-fly-by-2 5s linear infinite;
+  animation: sf-fly-by-2 15s linear infinite;
 }
 .star-field .layer:nth-child(3) {
-  animation: sf-fly-by-3 5s linear infinite;
+  animation: sf-fly-by-3 15s linear infinite;
 }

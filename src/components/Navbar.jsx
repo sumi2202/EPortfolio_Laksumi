@@ -20,7 +20,7 @@ const Navbar = () => {
             <div onClick={handleNav} className="md:hidden">
                 {!nav ? <AiOutlineClose size={20}/> : <AiOutlineMenu size={20} />}
             </div>
-            <div className={!nav ? "fixed left-0 top-0 w-[60%] h-full border-r border-r-[#7209b7] bg-[#02020a] ease-in-out duration-500" : "fixed left-[-100%]"}>
+            <div className={!nav ? "fixed left-0 top-0 w-[60%] h-full border-r border-r-[#7209b7] bg-[#02020a] ease-in-out duration-500" : "ease-in-out duration-500 fixed left-[-100%]"}>
             <h1 className="w-full text-3xl font-bold text-[#f72585] m-4">Laksumi Soma.</h1>
                 <ul className="uppercase p-4">
                     <li className ="p-4 text-[#fbf5f3] font-bold border-b border-[#f72585]">Home</li>

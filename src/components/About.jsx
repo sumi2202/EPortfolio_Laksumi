@@ -1,7 +1,7 @@
 import React from "react";
 import Typed from "react-typed";
 
-const MainPageHero = () => {
+const About = () => {
     return (
         <div className="text-[#fbf5f3]">
             <div className="max-w-[800px] mt-[-96px] w-full h-screen mx-auto text-center flex flex-col justify-center">
@@ -31,4 +31,4 @@ const MainPageHero = () => {
     );
 };
 
-export default MainPageHero
+export default About

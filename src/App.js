@@ -5,12 +5,13 @@ import About from "./components/About";
 
 function App() {
   return (
-    <div>
+    <><div>
       <Navbar />
-      <MainPageHero/>
-      <About />
-
+      <MainPageHero />
     </div>
+    <div>
+        <About />
+    </div></>
   );
 };
 
